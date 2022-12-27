@@ -1,24 +1,28 @@
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
 import s from './Timer.module.scss'
 
-export const Timer: FC = () => {
-  const [value, setValue] = useState(0)
-  useEffect(() => {
-    const time = setTimeout(() => {
-      setValue(value > 0 ? value - 1000 : 0)
-      return () => clearTimeout(time)
-    }, 1000)
-  }, [value])
+type TimerProps = {
+  valueTimer: number
+  userName: string
+  id: number
+  currentId: number
+}
 
-  const min = Math.floor(value / 60000)
-  const sec = value % 60000 / 1000
-  const onStartTimer = () => {
-    setValue(value + 120000)
-  }
+export const Timer: FC<TimerProps> = ({ valueTimer, userName, id, currentId }) => {
+
+  const min = Math.floor(valueTimer / 60)
+  const sec = valueTimer % 60
+
   return (
     <div className={s.timerWrap}>
-      Timer: {min}:{sec < 10 ? '0' + sec : sec}
-      <button onClick={() => onStartTimer()} disabled={value > 0}>start</button>
+      <div className={s.timer}>
+        {currentId === id &&
+          valueTimer > 0 &&
+          `Timer: ${min}:${sec.toString().padStart(2, '0')}`}
+      </div>
+      <div className={s.propertiesBox}>
+        {userName}
+      </div>
     </div>
   )
 }

@@ -1,12 +1,26 @@
 .timerWrap {
   display: grid;
   align-items: center;
-  justify-content: center;
-  width: 1200px;
-  height: 800px;
+  grid-template-rows: 1fr 5fr;
+  width: 300px;
+  height: 600px;
   font-size: 40px;
   font-family: Arial, sans-serif;
   font-weight: bold;
   border: 2px solid gray;
-  border-radius: 50px;
+  border-radius: 15px;
+  padding: 10px;
+  .timer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .propertiesBox {
+    height: 100%;
+    border-top: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
