@@ -10,17 +10,55 @@
   border: 2px solid gray;
   border-radius: 15px;
   padding: 10px;
+
   .timer {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .propertiesBox {
     height: 100%;
     border-top: 2px solid gray;
+    padding: 0 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    .propertyValue {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input {
+        height: 40px;
+        width: 140px;
+        padding: 0 5px;
+        font-size: 40px;
+        line-height: 38px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+      }
+    }
+
+    .editModeButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        height: 40px;
+        width: 40px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        img{
+          width: 100%;
+        }
+      }
+    }
   }
 }
+
