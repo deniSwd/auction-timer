@@ -1,7 +1,8 @@
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
 import s from './Timer.module.scss'
 import editModeButtonImg from '../assets/editModeButtonImg.png'
 import yesButtonImg from '../assets/yes.png'
+
 type TimerProps = {
   valueTimer: number
   userName: string
@@ -42,8 +43,8 @@ export const Timer: FC<TimerProps> = ({
           <button
             onClick={() => setEditMode(!editMode)}>
             {editMode ?
-              <img src={yesButtonImg} alt={'V'}/>:
-              <img src={editModeButtonImg} alt={'!'}/>}
+              <img src={yesButtonImg} alt={'V'} /> :
+              <img src={editModeButtonImg} alt={'!'} />}
           </button>}</div>
       </div>
     </div>
