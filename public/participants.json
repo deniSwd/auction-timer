@@ -4,36 +4,36 @@
       "id": 11,
       "online": true,
       "name": "user A",
-      "lead time": 50,
-      "payment terms":"50%"
+      "leadTime": 50,
+      "paymentTerms":"50%"
     },
     {
       "id": 22,
       "online": false,
       "name": "user B",
-      "lead time": 45,
-      "payment terms":"60%"
+      "leadTime": 45,
+      "paymentTerms":"60%"
     },
     {
       "id": 33,
       "online":false,
       "name": "user C",
-      "lead time": 48,
-      "payment terms":"70%"
+      "leadTime": 48,
+      "paymentTerms":"70%"
     },
     {
       "id": 44,
       "online": true,
       "name": "user D",
-      "lead time": 52,
-      "payment terms":"45%"
+      "leadTime": 52,
+      "paymentTerms":"45%"
     },
     {
       "id": 55,
       "online": true,
       "name": "user E",
-      "lead time": 55,
-      "payment terms":"40%"
+      "leadTime": 55,
+      "paymentTerms":"40%"
     }
   ]
 }
