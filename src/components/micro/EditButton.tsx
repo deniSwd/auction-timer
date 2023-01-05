@@ -1,5 +1,6 @@
 import yesButtonImg from '../../assets/yes.png'
 import editModeButtonImg from '../../assets/editModeButtonImg.png'
+import s from './editButton.module.scss'
 import { FC } from 'react'
 
 type ButtonProps = {
@@ -9,11 +10,11 @@ type ButtonProps = {
 
 export const Button:FC<ButtonProps> = ({editMode,setEditMode}) => {
   return (
-    <button
+    <div className={s.editButton}
       onClick={() => setEditMode(!editMode)}>
       {editMode ?
         <img src={yesButtonImg} alt={'V'} /> :
         <img src={editModeButtonImg} alt={'!'} />}
-    </button>
+    </div>
   )
 }

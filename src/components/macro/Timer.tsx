@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import s from './Timer.module.scss'
 import { Participant } from '../../MainTypes'
-import { Button } from '../micro/EditButton'
 import { Property } from '../micro/Property'
 
 type TimerProps = {

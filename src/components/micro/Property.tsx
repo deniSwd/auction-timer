@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from 'react'
-import s from '../macro/Timer.module.scss'
+import s from './Property.module.scss'
 import { Button } from './EditButton'
 
 type PropertyProps = {
@@ -16,8 +16,10 @@ export const Property: FC<PropertyProps> = ({ isDisplay, userDataProperty }) => 
   }, [isDisplay])
 
   return (
-    <div className={s.propertyValue}>
-      {isDisplay && editMode ? <input value={userDataProperty} /> : userDataProperty}
+    <div className={s.propertyWrap}>
+      <div className={s.propertyValue}>
+        {isDisplay && editMode ? <input value={userDataProperty} /> : userDataProperty}
+      </div>
       <div className={s.editModeButton}>
         {isDisplay && <Button editMode={editMode} setEditMode={setEditMode} />}
       </div>

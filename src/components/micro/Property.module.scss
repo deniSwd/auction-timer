@@ -1,0 +1,28 @@
+.propertyWrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .propertyValue {
+
+    input {
+      height: 40px;
+      width: 140px;
+      padding: 0 5px;
+      font-size: 40px;
+      line-height: 38px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+  }
+
+  .editModeButton {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: 0 -50%;
+  }
+}
+

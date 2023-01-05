@@ -37,6 +37,9 @@ export const App: FC = () => {
   return (
     <div className={s.app}>
       <div className={s.timersWrap}>
+        <div className={s.propertiesList}>
+          property
+        </div>
         {data.participants.map(p => <Timer valueTimer={value}
                                            userData={p}
                                            currentId={currentId} />)}
