@@ -1,0 +1,47 @@
+.userBoxWrap {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr 5fr;
+  width: 14%;
+  height: 30vw;
+  font-size: 1.7vw;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border: 2px solid gray;
+  border-radius: 15px;
+  padding: 0.5vw;
+
+  .timer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(201, 113, 113);
+  }
+
+  .propertiesBox {
+    height: 100%;
+    border-top: 2px solid gray;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+
+    .online {
+      width: 2vw;
+      height: 2vw;
+      border-radius: 50%;
+      background-color: rgb(92, 126, 72);
+    }
+
+    .offline {
+      width: 2vw;
+      height: 2vw;
+      border-radius: 50%;
+      background-color: rgba(201, 113, 113, 0.66);
+    }
+  }
+}
+

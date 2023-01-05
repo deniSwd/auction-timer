@@ -6,25 +6,11 @@
   width: 100vw;
   height: 100vh;
 
-  .timersWrap {
+  .usersBoxWrap {
     display: flex;
     justify-content: center;
-    width: 96%;
-    gap: 10px;
-
-    .propertiesList{
-      display: grid;
-      align-items: center;
-      grid-template-rows: 1fr 5fr;
-      width: 16%;
-      height: 600px;
-      font-size: 30px;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      border: 2px solid gray;
-      border-radius: 15px;
-      padding: 10px;
-    }
+    width: 95%;
+    gap: 0.5vw;
   }
 
   button {
