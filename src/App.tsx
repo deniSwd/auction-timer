@@ -29,9 +29,7 @@ export const App: FC = () => {
       clearTimeout(time)
     }
   }, [value, currentIndex])
-  const onStartTimer = () => {
-    setValue(0)
-  }
+
   const currentId = data.participants[currentIndex % data.participants.length]?.id
 
   return (
@@ -42,7 +40,7 @@ export const App: FC = () => {
                                              userData={p}
                                              currentId={currentId} />)}
       </div>
-      <button onClick={() => onStartTimer()} disabled={value > 0}>start auction</button>
+      <button onClick={() => setValue(0)} disabled={value > 0}>start auction</button>
     </div>
   )
 }

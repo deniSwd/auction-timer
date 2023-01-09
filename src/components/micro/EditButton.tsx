@@ -4,14 +4,14 @@ import s from './editButton.module.scss'
 import { FC } from 'react'
 
 type ButtonProps = {
-  editMode:boolean
-  setEditMode: (ediMode: boolean) =>void
+  editMode: boolean
+  setEditMode: (ediMode: boolean) => void
 }
 
-export const Button:FC<ButtonProps> = ({editMode,setEditMode}) => {
+export const Button: FC<ButtonProps> = ({ editMode, setEditMode }) => {
   return (
     <div className={s.editButton}
-      onClick={() => setEditMode(!editMode)}>
+         onClick={() => setEditMode(!editMode)}>
       {editMode ?
         <img src={yesButtonImg} alt={'V'} /> :
         <img src={editModeButtonImg} alt={'!'} />}

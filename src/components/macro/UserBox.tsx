@@ -9,11 +9,7 @@ type UserBoxProps = {
   currentId: number
 }
 
-export const UserBox: FC<UserBoxProps> = ({
-                                            valueTimer,
-                                            userData,
-                                            currentId,
-                                          }) => {
+export const UserBox: FC<UserBoxProps> = ({ valueTimer, userData, currentId }) => {
 
   const min = Math.floor(valueTimer / 60)
   const sec = valueTimer % 60
